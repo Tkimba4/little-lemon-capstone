@@ -3,19 +3,48 @@
 .card {
   display: grid;
   gap: 1rem;
-  padding: 20px;
   border-radius: 16px;
   background-color: $light;
   transition: 0.3s;
+  position: relative;
+  overflow: hidden;
 }
 .card:hover {
   background-color: $primary-1;
 
-  .description {
+  .description,
+  .cta {
     color: $light;
+  }
+  .name {
+    color: $primary-2;
   }
 }
 
+.dish {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: $primary-2;
+  padding: 10px;
+  clip-path: circle();
+  z-index: 2;
+  transition: .3s;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.imgContent {
+}
+.imgContent img {
+  // border-radius: 16px;
+  width: 100%;
+  transition: 0.3s;
+  opacity: 0.8;
+}
 .text {
   display: grid;
   gap: 1rem;
@@ -23,12 +52,13 @@
     "name price"
     "description description"
     "cta cta";
+  padding: 20px;
 }
 .name {
   font-size: 24px;
   font-weight: bold;
   grid-area: name;
-  color: $primary-2;
+  color: $dark;
 }
 .price {
   font-size: 1.2rem;
@@ -46,4 +76,8 @@
   border: none;
   background-color: transparent;
   grid-area: cta;
+  transition: 0.3s;
+  &:hover {
+    color: $secondary-2 !important;
+  }
 }

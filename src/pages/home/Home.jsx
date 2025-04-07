@@ -14,22 +14,28 @@ const Home = () => {
         <div className="container">
           <div className={style.heroContent}>
             <div className={style.heroText}>
-              <h1 className={`title ${style.title}`}>Little Lemon</h1>
-              <p className={`subTitle ${style.subTitle}`}>Chicago</p>
-              <div className={style.heroDescription}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
-                ipsam aperiam consectetur obcaecati error nihil veritatis? Error
-                temporibus explicabo minus culpa reprehenderit, minima
-                reiciendis sint, aliquid quisquam unde eum nisi!
-              </div>
-              <div className="hero-cta">
+              <h1 className={`title ${style.heroTitle}`}>Little Lemon</h1>
+              <p className={`subtitle ${style.heroSubtitle}`}>Chicago</p>
+              <p className={style.heroDescription}>
+                Little Lemon is a family-owned Mediterranean restaurant, focused
+                on traditional recipes served with a modern twist. We take pride
+                in our fresh ingredients and authentic flavors, ensuring that
+                every dish is a delightful experience for our guests.
+              </p>
+              <div className={style.heroCta}>
                 <Link to="/booking" className="btn btn-primary">
-                  Order
+                  Reserve a table
                 </Link>
               </div>
             </div>
             <div className={style.heroImg}>
-              <img src="/assets/restaurant.jpg" alt="Restaurant" />
+              <img
+                src="/img/hero.jpg"
+                alt="Restaurant"
+                width={300}
+                height={300}
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
@@ -38,7 +44,7 @@ const Home = () => {
         <div className="container">
           <div className={style.menuContent}>
             <div className={style.menuTop}>
-              <h2 className="title">Special</h2>
+              <h2 className="title">Specials</h2>
               <button className="btn">Online menu</button>
             </div>
             <div className={style.menuItemsContent}>
@@ -68,8 +74,8 @@ const Home = () => {
         <div className="container">
           <div className={style.aboutContent}>
             <div className={style.aboutText}>
-              <h2 className={style.aboutTitle}>Little Lemon</h2>
-              <p className={`${style.aboutSubtitle}`}>Chicago</p>
+              <h2 className={`title ${style.aboutTitle}`}>Little Lemon</h2>
+              <p className={`subtitle ${style.aboutSubtitle}`}>Chicago</p>
               <p className={style.description}>
                 little lemon is a family-owned Mediterranean restaurant, focused
                 on traditional recipes served with a modern twist. We take pride
@@ -83,16 +89,18 @@ const Home = () => {
             </div>
             <div className={style.aboutImgs}>
               <img
-                src="img/about-1.jpg"
+                src="/img/about-2.webp"
                 alt="our resto"
                 width={300}
                 height={300}
+                loading="lazy"
               />
               <img
-                src="img/about-2.jpg"
+                src="/img/about-1.webp"
                 alt="Mario and Adrian"
                 width={300}
                 height={300}
+                loading="lazy"
               />
             </div>
           </div>

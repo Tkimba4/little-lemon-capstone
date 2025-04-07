@@ -25,10 +25,38 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+button{
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.title {
+  font-size: $titleSize;
+  font-weight: bold;
+  font-family: $hFont;
+}
+.subtitle {
+  margin-top: -10px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-family: $hFont;
+  font-size: $subtitleSize;
+}
+
 .btn {
   border-radius: 16px;
   background-color: $primary-2;
-  // color:;
+  color: $dark;
   padding: 15px 30px;
   border: none;
+  font-family: $pFont;
+  transition: 0.3s;
+  font-size: inherit;
+  &:hover {
+    background-color: $secondary-1;
+    color: $light;
+    transform: scale(0.95);
+    cursor: pointer;
+  }
 }

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className={style.top}>
           <div className={style.img}>
-            <img src="img/footer.png" alt="logo" width={100} height={100} />
+            <img src="/img/footer.png" alt="logo" width={100} height={100} />
           </div>
           <div className={style.navigation}>
             <h3 className={style.title}>Navigation</h3>
