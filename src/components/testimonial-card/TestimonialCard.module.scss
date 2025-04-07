@@ -1,0 +1,27 @@
+@use "../../assets/styles/variables" as *;
+.card {
+  display: grid;
+  background-color: $light;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  transition: 0.3s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.profil {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profil img{
+  clip-path: circle();
+}
+.name{
+  font-weight: bold;
+  font-size: 18px;
+}

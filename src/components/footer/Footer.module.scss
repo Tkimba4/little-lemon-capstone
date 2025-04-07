@@ -1,0 +1,60 @@
+@use "../../assets/styles/variables" as *;
+
+.footer {
+  background-color: $light;
+  color: $dark;
+}
+.footerContent {
+  display: grid;
+  gap: 1rem;
+  padding: 20px 0;
+}
+.top {
+  display: grid;
+//   justify-content: space-between;
+grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.img img {
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.title {
+  font-size: 1.5rem;
+  color: $primary-1;
+  margin-bottom: 20px;
+}
+.top li {
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+.top a {
+  display: grid;
+  transition: 0.3s;
+  color: $primary-1;
+  &:hover {
+    transform: translateX(10px);
+    color: $primary-2;
+  }
+}
+.bottom {
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 30px;
+  border-top: 1px solid $secondary-1;
+  color: $primary-1;
+}
+.bottom span {
+  color: $secondary-1;
+  font-weight: bold;
+}
+
+@media #{$desktop} {
+.top{
+    display: flex;
+    justify-content: space-evenly;
+}
+}

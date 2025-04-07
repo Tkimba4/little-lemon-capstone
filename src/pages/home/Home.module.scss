@@ -1,0 +1,128 @@
+@use "../../assets/styles/variables" as *;
+
+.hero {
+  background-color: $primary-1;
+  color: white;
+}
+.heroContent,
+.aboutContent {
+  display: grid;
+  gap: 1rem;
+}
+.heroText {
+  // display: grid;
+  // gap: 1rem;
+}
+.title {
+  color: $primary-2;
+}
+.subTitle {
+  color: $light;
+}
+
+.heroDescription {
+  margin: 20px 0;
+}
+
+// .menu,
+// .about {
+//   background-color: $light;
+// }
+
+.menuTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.menuTopTitle {
+  color: $primary-1;
+  font-size: $titleSize;
+  font-weight: bold;
+  font-family: $hFont;
+}
+.menuItemsContent {
+  display: grid;
+  gap: 2rem;
+}
+
+//testimonials
+.testimonials {
+  background-color: $secondary-2;
+}
+.testimonialsTitle {
+  // color: $primary-1;
+  font-size: $subtitleSize;
+  font-weight: bold;
+  // font-family: $hFont;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.testimonialsItemsContent{
+  display: grid;
+  gap: 2rem;
+}
+
+//About
+.aboutTitle {
+  color: $primary-1;
+  font-size: $titleSize;
+  font-weight: bold;
+  font-family: $hFont;
+}
+.aboutSubtitle {
+  color: $secondary-1;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: $hFont;
+  font-size: $subtitleSize;
+}
+
+.aboutImgs {
+  display: grid;
+  justify-items: center;
+}
+.aboutImgs img {
+  border-radius: 16px;
+  transition: 0.3s;
+  opacity: 0.8;
+
+  &:hover {
+    z-index: 2;
+    opacity: 1;
+  }
+  &:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform: translate(20%, 20%) rotate(-5deg);
+    z-index: 1;
+    &:hover {
+      transform: translate(20%, 20%) scale(1.1);
+    }
+  }
+  &:nth-child(2) {
+    bottom: 0;
+    right: 0;
+    transform: translate(-20%, -20%) rotate(5deg);
+    &:hover {
+      transform: translate(-20%, -20%) scale(1.1);
+    }
+  }
+}
+
+@media #{$desktop} {
+  .heroContent,
+  .aboutContent {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .menuItemsContent{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+  .testimonialsItemsContent{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}

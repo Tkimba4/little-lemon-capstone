@@ -1,0 +1,49 @@
+@use "../../assets/styles/variables" as *;
+
+.card {
+  display: grid;
+  gap: 1rem;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: $light;
+  transition: 0.3s;
+}
+.card:hover {
+  background-color: $primary-1;
+
+  .description {
+    color: $light;
+  }
+}
+
+.text {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "name price"
+    "description description"
+    "cta cta";
+}
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  grid-area: name;
+  color: $primary-2;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  grid-area: price;
+  color: $secondary-1;
+  text-align: right;
+}
+.description {
+  font-size: 1rem;
+  grid-area: description;
+  color: $dark;
+}
+.cta {
+  border: none;
+  background-color: transparent;
+  grid-area: cta;
+}
