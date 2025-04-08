@@ -1,0 +1,22 @@
+@use "../../assets/styles/variables" as *;
+.breadcrumb {
+  background-color: $primary-1;
+}
+.title {
+  color: $primary-2;
+}
+.subtitle {
+  color: $light;
+}
+.link {
+  transition: 0.3s;
+  //   color: $dark;
+  &:hover {
+    color: $secondary-1;
+  }
+}
+.current {
+  //   color: $light;
+  font-weight: bold;
+  font-style: italic;
+}

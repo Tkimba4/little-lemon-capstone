@@ -1,0 +1,18 @@
+@use "../../assets/styles/variables" as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.header > div{
+    padding: 20px ;
+}
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+//   margin-bottom: 40px;
+}

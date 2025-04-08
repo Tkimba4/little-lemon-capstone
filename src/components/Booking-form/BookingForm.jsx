@@ -1,9 +1,12 @@
 import React from "react";
-
+import style from "./BookingForm.module.scss";
 const BookingForm = () => {
   return (
     <>
-      <form style={{ display: "grid", maxWidth: "200px", gap: "20px" }}>
+      <form
+        className={style.form}
+        style={{ display: "grid", maxWidth: "200px", gap: "20px" }}
+      >
         <label htmlFor="res-date">Choose date</label>
         <input type="date" id="res-date" />
         <label htmlFor="res-time">Choose time</label>
