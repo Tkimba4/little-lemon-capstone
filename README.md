@@ -20,9 +20,15 @@ This is a simple table reservation form built with **React** as part of a Course
    ```
 
 2. **Install:**
+    ```bash
    npm install
 
+    ```
+
 3. **Start:**
+    ```bash
    npm start
+   
+   ```
 
 The app will run at http://localhost:3000
