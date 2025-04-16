@@ -5,13 +5,13 @@ const BreadCrumb = ({ title }) => {
   return (
     <div className={style.breadcrumb}>
       <div className="container">
-        <div className={style.breadcrumbContent}>
+        <div className={style.breadcrumbContent} data-aos="fade-right" data-aos-duration="500">
           <h1 className={`title ${style.title}`}>{title}</h1>
           <p className={style.subtitle}>
             <Link className={style.link} to="/">
               Home
             </Link>{" "}
-            {` > `} <spa className={style.current}>{title}</spa>
+            {` > `} <span className={style.current}>{title}</span>
           </p>
         </div>
       </div>

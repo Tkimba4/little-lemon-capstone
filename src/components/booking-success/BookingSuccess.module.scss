@@ -1,0 +1,65 @@
+@use "../../assets/styles/variables" as *;
+
+.modal {
+  //  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  perspective: 1000px;
+  transition: 0.3s background-color;
+}
+
+.modalDialog {
+  transition: 0.3s;
+  border-radius: 16px;
+  // margin: auto 20px;
+  max-width: 768px;
+  background-color: white;
+  // background-image: linear-gradient(to bottom, white, #195aff 100%);
+  // color: white;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 30px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.modal table {
+  min-width: 250px;
+  margin: 20px auto;
+  font-family: $pFont;
+  font-size: 1.2rem;
+  border: 1px solid $primary-1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.modal tr {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.modal td,
+th {
+  color: $dark;
+  border: 1px solid $primary-1;
+  border-collapse: collapse;
+}
+
+.btnClose {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+  }
+}

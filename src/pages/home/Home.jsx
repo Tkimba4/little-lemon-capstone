@@ -13,7 +13,11 @@ const Home = () => {
       <section className={style.hero}>
         <div className="container">
           <div className={style.heroContent}>
-            <div className={style.heroText}>
+            <div
+              className={style.heroText}
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <h1 className={`title ${style.heroTitle}`}>Little Lemon</h1>
               <p className={`subtitle ${style.heroSubtitle}`}>Chicago</p>
               <p className={style.heroDescription}>
@@ -35,6 +39,9 @@ const Home = () => {
                 width={300}
                 height={300}
                 loading="lazy"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-delay="100"
               />
             </div>
           </div>
@@ -48,8 +55,14 @@ const Home = () => {
               <button className="btn">Online menu</button>
             </div>
             <div className={style.menuItemsContent}>
-              {dishes.map((dish) => (
-                <MenuCard key={dish.id} dish={dish} />
+              {dishes.map((dish, index) => (
+                <MenuCard
+                  key={dish.id}
+                  dish={dish}
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay={`${index - 1}00`}
+                />
               ))}
             </div>
           </div>
@@ -60,10 +73,13 @@ const Home = () => {
           <div className={style.testimonialsContent}>
             <h2 className={style.testimonialsTitle}>Testimonails</h2>
             <div className={style.testimonialsItemsContent}>
-              {testimonials.map((testimonial) => (
+              {testimonials.map((testimonial, index) => (
                 <TestimonialCard
                   key={testimonial.id}
                   testimonial={testimonial}
+                  data-aos="fade-up"
+                  data-aos-duration="500"
+                  data-aos-delay={`${index - 1}00`}
                 />
               ))}
             </div>
@@ -73,7 +89,11 @@ const Home = () => {
       <section id="about" className={style.about}>
         <div className="container">
           <div className={style.aboutContent}>
-            <div className={style.aboutText}>
+            <div
+              className={style.aboutText}
+              data-aos="fade-right"
+              data-aos-duration="500"
+            >
               <h2 className={`title ${style.aboutTitle}`}>Little Lemon</h2>
               <p className={`subtitle ${style.aboutSubtitle}`}>Chicago</p>
               <p className={style.description}>
@@ -87,7 +107,11 @@ const Home = () => {
                 service, making sure that every visit is memorable.
               </p>
             </div>
-            <div className={style.aboutImgs}>
+            <div
+              className={style.aboutImgs}
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <img
                 src="/img/about-2.webp"
                 alt="our resto"

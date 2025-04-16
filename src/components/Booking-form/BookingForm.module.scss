@@ -1,0 +1,42 @@
+@use "../../assets/styles/variables" as *;
+.form {
+  background-color: $light;
+  max-width: 400px;
+  margin: 50px auto;
+  //   padding: 0px;
+  display: grid;
+  gap: 1.5rem;
+  //   border: 1px solid $primary-1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  font-family: $pFont;
+}
+.form > div {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form label {
+  &::after {
+    content: "*";
+    color: red;
+  }
+}
+.form label[for="occasion"] {
+  content: "";
+}
+.form input,
+.form select {
+  // grid-area: input;
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  // background-color: $light;
+}
+
+@media #{$desktop} {
+  .form {
+    margin: 50px auto;
+  }
+}

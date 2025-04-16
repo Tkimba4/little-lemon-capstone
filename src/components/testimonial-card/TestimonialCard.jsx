@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./TestimonialCard.module.scss";
 
-const TestimonialCard = ({ testimonial }) => {
+const TestimonialCard = ({ testimonial, ...props }) => {
   const { name, text, id, sex } = testimonial;
 
   return (
-    <div className={style.card}>
+    <div className={style.card} {...props}>
       <div className={style.profil}>
         <img
           src={`https://randomuser.me/api/portraits/${sex}/${id}.jpg`}

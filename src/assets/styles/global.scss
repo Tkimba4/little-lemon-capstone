@@ -1,6 +1,11 @@
 @forward "./min-reset.scss";
 @use "./variables" as *;
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Markazi+Text:wght@400..700&display=swap");
+
+*::selection{
+  background-color: $primary-2;
+  color: $primary-1;
+}
 .container {
   max-width: $max-width-container;
   margin: 0 auto;

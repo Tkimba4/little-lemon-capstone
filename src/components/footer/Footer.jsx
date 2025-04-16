@@ -9,7 +9,7 @@ const Footer = () => {
           <div className={style.img}>
             <img src="/img/footer.png" alt="logo" width={100} height={100} />
           </div>
-          <div className={style.navigation}>
+          <div className={style.navigation} data-aos="fade-up" data-aos-duration="500">
             <h3 className={style.title}>Navigation</h3>
             <ul>
               {navigations.map((item, index) => (
@@ -26,7 +26,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className={style.contacts}>
+          <div className={style.contacts} data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
             <h3 className={style.title}>Contact</h3>
             <ul>
               {contacts.map((item, index) => (
@@ -43,7 +43,7 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-          <div className={style.socials}>
+          <div className={style.socials} data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
             <h3 className={style.title}>Social</h3>
             <ul className={style.social}>
               {social.map((item, index) => (

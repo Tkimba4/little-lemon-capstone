@@ -2,10 +2,10 @@ import React from "react";
 import style from "./MenuCard.module.scss";
 import { Link } from "react-router-dom";
 
-const MenuCard = ({ dish }) => {
+const MenuCard = ({ dish, ...props }) => {
   const { name, description, price, id } = dish;
   return (
-    <div className={style.card}>
+    <div className={style.card} {...props}>
       <div className={style.dish}>
         <img src="/icons/dish.svg" alt="icon" width={30} height={30} />
       </div>

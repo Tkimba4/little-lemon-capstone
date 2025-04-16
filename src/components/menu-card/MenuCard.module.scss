@@ -9,18 +9,18 @@
   position: relative;
   overflow: hidden;
 }
-.card:hover {
-  background-color: $primary-1;
-  transform: scale(1.03);
+// .card:hover {
+//   background-color: $primary-1;
+//   transform: scale(1.03);
 
-  .description,
-  .cta {
-    color: $light;
-  }
-  .name {
-    color: $primary-2;
-  }
-}
+//   .description,
+//   .cta {
+//     color: $light;
+//   }
+//   .name {
+//     color: $primary-2;
+//   }
+// }
 
 .dish {
   display: inline-block;
@@ -79,6 +79,6 @@
   grid-area: cta;
   transition: 0.3s;
   &:hover {
-    color: $secondary-2 !important;
+    color: $secondary-1 !important;
   }
 }
