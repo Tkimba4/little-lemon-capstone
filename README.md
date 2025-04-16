@@ -1,4 +1,4 @@
-# Little Lemon Table capstone App
+# Little Lemon capstone
 
 This is a simple table reservation form built with **React** as part of a Coursera Front-End Capstone project. The app allows users to select a date, time, number of guests, and occasion for a dinner reservation, with validation and confirmation of submission.
 
@@ -28,7 +28,7 @@ This is a simple table reservation form built with **React** as part of a Course
 3. **Start:**
     ```bash
    npm start
-   
+
    ```
 
 The app will run at http://localhost:3000
