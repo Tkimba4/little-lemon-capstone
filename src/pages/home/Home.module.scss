@@ -52,6 +52,7 @@
 .menuItemsContent {
   display: grid;
   gap: 2rem;
+  justify-content: center;
 }
 
 //testimonials
@@ -120,23 +121,32 @@
   }
 }
 
-@media #{$desktop} {
+@media #{$tablet} {
   .heroContent,
   .aboutContent {
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
   .menuItemsContent {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // gap: 4rem;
   }
   .testimonialsItemsContent {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 2rem;
   }
   .heroImg {
     // margin-top: 20px;
     // display: grid;
     justify-items: center;
+  }
+}
+
+@media #{$desktop} {
+  .testimonialsItemsContent {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

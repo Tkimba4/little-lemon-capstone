@@ -2,8 +2,8 @@
 .form {
   background-color: $light;
   max-width: 400px;
-  margin: 50px auto;
-  //   padding: 0px;
+  margin: 0px auto;
+    // padding: 0px;
   display: grid;
   gap: 1.5rem;
   //   border: 1px solid $primary-1;
@@ -32,6 +32,7 @@
   border-radius: 5px;
   padding: 8px;
   border: none;
+  width: 100%;
   // background-color: $light;
 }
 

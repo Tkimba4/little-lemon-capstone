@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
         <div className={style.bottom}>
           <p>
-            ©{2025} <span>Little Lemon</span>
+            ©{2025} <span>Little Lemon</span> by <a className={style.tkimba4} href="https://tkimba4.vercel.app">Tkimba4</a>
           </p>
         </div>
       </div>

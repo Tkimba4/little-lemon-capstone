@@ -16,14 +16,16 @@
 .top {
   display: grid;
   //   justify-content: space-between;
-  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  flex-wrap: wrap;
 }
 .img img {
   transition: 0.3s;
   animation: to-scale 1s infinite alternate linear;
 
+}
+.top ul{
+  display: grid;
+  justify-items: start;
 }
 .title {
   font-size: 1.5rem;
@@ -54,7 +56,20 @@
   color: $secondary-1;
   font-weight: bold;
 }
+.tkimba4{
+  color: gray;
+  transition: 0.3s;
+  &:hover {
+    color: initial;
+  }
+}
 
+@media #{$tablet} {
+  .top{
+    grid-template-columns: repeat(2, 1fr);
+
+  };
+}
 @media #{$desktop} {
   .top {
     display: flex;

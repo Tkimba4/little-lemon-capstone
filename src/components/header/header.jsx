@@ -17,6 +17,12 @@ function handleClick(e) {
   const nav = document.querySelector(`.${style.nav}`);
   nav.classList.toggle(style.open);
 }
+function closeMenu(e) {
+  const nav = document.querySelector(`.${style.nav}`);
+  nav.classList.remove(style.open);
+  const btn = document.querySelector(`.${style.btnMenu}`);
+  btn.classList.remove(style.btnActive);
+}
 const Header = () => {
   return (
     <header className={style.header}>
@@ -35,6 +41,7 @@ const Header = () => {
                   <NavLink
                     to={`/${item.link}`}
                     className={style.navLink}
+                    onClick={closeMenu}
                   >
                     {item.name}
                   </NavLink>

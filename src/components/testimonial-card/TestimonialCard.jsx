@@ -10,8 +10,8 @@ const TestimonialCard = ({ testimonial, ...props }) => {
         <img
           src={`https://randomuser.me/api/portraits/${sex}/${id}.jpg`}
           alt={name}
-          width={100}
-          height={100}
+          width={50}
+          height={50}
         />
         <span className={style.name}>{name}</span>
         {/* <span className={style.username}>{username}</span> */}
